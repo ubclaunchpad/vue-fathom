@@ -7,7 +7,7 @@ export interface VueFathom {
 
 export interface PluginOptions {
   siteID: string;
-  enabled?: boolean;
+  disabled?: boolean;
 }
 
 export class VueFathomPlugin {

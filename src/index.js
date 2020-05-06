@@ -1,8 +1,8 @@
 import * as Fathom from 'fathom-client';
 
-export function install(Vue, options = { siteID: '', enabled: true }) {
+export function install(Vue, options = { siteID: '', disabled: false }) {
   const fathom = {};
-  if (options.enabled) {
+  if (!options.disabled) {
     Fathom.load();
     Fathom.setSiteId(options.siteID);
   

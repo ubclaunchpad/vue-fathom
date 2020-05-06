@@ -12,6 +12,6 @@ import VueFathom from '@ubclaunchpad/vue-fathom';
 
 Vue.use(VueFathom, {
   siteID: 'XXXXXXXX',
-  enabled: true,
+  disabled: false,
 });
 ```
