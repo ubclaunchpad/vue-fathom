@@ -8,6 +8,7 @@ export interface VueFathom {
 export interface PluginOptions {
   siteID: string;
   disabled?: boolean;
+  fathomURL?: string;
 }
 
 export class VueFathomPlugin {
