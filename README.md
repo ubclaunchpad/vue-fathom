@@ -11,6 +11,7 @@ import Vue from 'vue';
 import VueFathom from '@ubclaunchpad/vue-fathom';
 
 Vue.use(VueFathom, {
-  siteID: 'FTSSPSGR',
+  siteID: 'XXXXXXXX',
+  eneabled: true,
 });
 ```
