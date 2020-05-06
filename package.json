@@ -1,10 +1,21 @@
 {
   "name": "@ubclaunchpad/vue-fathom",
-  "version": "1.0.2",
+  "version": "1.0.7",
   "description": "A simple Vue plugin for Fathom Analytics.",
-  "main": "src/index.js",
-  "types": "vue-fathom.d.ts",
+  "types": "index.d.ts",
+  "main": "./dist/@ubclaunchpad/vue-fathom.js",
+  "module": "./dist/@ubclaunchpad/vue-fathom.esm.js",
+  "unpkg": "./dist/@ubclaunchpad/vue-fathom.umd.js",
+  "jsdelivr": "./dist/@ubclaunchpad/vue-fathom.umd.js",
+  "files": [
+    "dist",
+    "index.d.ts",
+    "plugin.d.ts",
+    "vue.d.ts"
+  ],
   "scripts": {
+    "build": "bili",
+    "prepublishOnly": "npm run build",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -20,5 +31,8 @@
   "dependencies": {
     "fathom-client": "^2.0.3",
     "vue": "^2.6.11"
+  },
+  "devDependencies": {
+    "bili": "^4.9.4"
   }
 }
