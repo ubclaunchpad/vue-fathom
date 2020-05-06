@@ -11,4 +11,6 @@ export function install(Vue, options = { siteID: '' }) {
   };
   Vue.$fathom = fathom;
   Vue.prototype.$fathom = fathom;
-}
+};
+
+export default { install };

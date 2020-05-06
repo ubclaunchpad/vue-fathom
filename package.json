@@ -1,6 +1,6 @@
 {
   "name": "@ubclaunchpad/vue-fathom",
-  "version": "1.0.7",
+  "version": "1.0.9",
   "description": "A simple Vue plugin for Fathom Analytics.",
   "types": "index.d.ts",
   "main": "./dist/@ubclaunchpad/vue-fathom.js",
