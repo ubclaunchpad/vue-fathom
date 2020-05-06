@@ -8,7 +8,7 @@ export function install(Vue, options = { siteID: '', enabled: true }) {
   
     // see vue-fathom.d.ts
     fathom.trackPageview = Fathom.trackPageview;
-    fathom.trackGoal = Fathom.trackGoal;
+    fathom.trackGoal = (id, value = 0) => Fathom.trackGoal(id, value);
   } else {
     fathom.trackPageview = () => {};
     fathom.trackGoal = () => {};

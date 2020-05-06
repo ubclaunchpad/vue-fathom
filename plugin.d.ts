@@ -1,7 +1,7 @@
 import _Vue from 'vue';
 
 export interface VueFathom {
-  trackGoal(id: string, val: number): void
+  trackGoal(id: string, val?: number): void
   trackPageview(): void;
 }
 
