@@ -1,4 +1,4 @@
-# vue-fathom
+# vue-fathom ![npm (scoped)](https://img.shields.io/npm/v/@ubclaunchpad/vue-fathom)
 
 A simple Vue plugin for Fathom Analytics.
 
@@ -12,6 +12,6 @@ import VueFathom from '@ubclaunchpad/vue-fathom';
 
 Vue.use(VueFathom, {
   siteID: 'XXXXXXXX',
-  eneabled: true,
+  enabled: true,
 });
 ```
