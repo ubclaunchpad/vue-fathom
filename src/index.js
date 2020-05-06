@@ -1,4 +1,9 @@
-import { setOptions as _setOptions, install } from "./install";
+import * as Fathom from 'fathom-client';
 
-export default install;
-export { install };
+export function install(Vue, options = { siteID: '' }) {
+  Fathom.load();
+  Fathom.setSiteId(options.siteID);
+
+  Vue.$fathom = Fathom;
+  Vue.prototype.$fathom = Fathom;
+}
