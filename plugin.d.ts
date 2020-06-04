@@ -10,7 +10,7 @@ export type PageViewOptions = {
 
 export interface VueFathom {
   trackGoal(id: string, val?: number): void
-  trackPageview(opts: PageViewOptions): void;
+  trackPageview(opts?: PageViewOptions): void;
 }
 
 export interface PluginOptions {
