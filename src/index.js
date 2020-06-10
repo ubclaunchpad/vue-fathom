@@ -3,7 +3,7 @@ import * as Fathom from 'fathom-client';
 export function install(Vue, options = { siteID: '', disabled: false, settings: {} }) {
   const fathom = {};
   if (!options.disabled) {
-    Fathom.load(siteID, settings);
+    Fathom.load(options.siteID, options.settings);
   
     // see vue-fathom.d.ts
     fathom.trackPageview = Fathom.trackPageview;
