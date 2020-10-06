@@ -1,6 +1,12 @@
 import * as Fathom from 'fathom-client';
 
-export function install(Vue, options = { siteID: '', disabled: false, settings: {} }) {
+/**
+ * Fathom plugin for Vue.
+ * 
+ * @param {import('vue').App} app Vue application
+ * @param {import('../plugin').PluginOptions} options configuration for plugin
+ */
+export function install(app, options = { siteID: '', disabled: false, settings: {} }) {
   const fathom = {};
   if (!options.disabled) {
     Fathom.load(options.siteID, options.settings);
@@ -13,8 +19,7 @@ export function install(Vue, options = { siteID: '', disabled: false, settings: 
     fathom.trackGoal = () => {};
   }
 
-  Vue.$fathom = fathom;
-  Vue.prototype.$fathom = fathom;
+  app.provide('$fathom', fathom);
 };
 
 export default { install };

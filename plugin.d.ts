@@ -1,4 +1,4 @@
-import _Vue from 'vue';
+import { App } from 'vue';
 
 // Types copied here to avoid import, which seems to cause problems.
 
@@ -30,7 +30,7 @@ export interface PluginOptions {
 
 export class VueFathomPlugin {
   static install(
-    Vue: typeof _Vue,
+    app: App,
     options: PluginOptions,
   ): void;
 }
